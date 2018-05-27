@@ -63,7 +63,6 @@ if __name__ == '__main__':
     app_name = args[1]
 
     if app_name == "guess":
-        print "zzzz"
         g = wafp.WebAppGuesser(url)
         print >> wac.DEFAULT_LOGFILE, "Probing..."
         apps = g.guess_apps()

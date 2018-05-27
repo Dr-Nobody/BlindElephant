@@ -1,0 +1,52 @@
+
+
+The original BlindElephant was on:
+https://sourceforge.net/projects/blindelephant/
+http://blindelephant.sourceforge.net/
+
+REQUIREMENT
+
+Python 2.6 minimum
+
+
+USE
+
+$ python BlindElephant.py "http://192.168.1.29/tikiwiki/" tikiwiki
+Loaded /usr/lib/python2.7/dist-packages/blindelephant/dbs/tikiwiki.pkl with 106 versions, 10624 differentiating paths, and 708 version groups.
+Starting BlindElephant fingerprint for version of tikiwiki at http://192.168.1.29/tikiwiki 
+
+Hit http://192.168.1.29/tikiwiki/changelog.txt
+Possible versions based on result: 1.9.5
+
+Hit http://192.168.1.29/tikiwiki/README
+Possible versions based on result: 1.9.5
+
+Hit http://192.168.1.29/tikiwiki/copyright.txt
+Possible versions based on result: 1.9.5, 1.9.6, 1.9.7
+
+Hit http://192.168.1.29/tikiwiki/lib/tiki-js.js
+Possible versions based on result: 1.9.3, 1.9.3.1, 1.9.3.2, 1.9.4, 1.9.5, 1.9.6, 1.9.7
+
+Hit http://192.168.1.29/tikiwiki/INSTALL
+Possible versions based on result: 1.9.5, 1.9.6, 1.9.7
+
+Hit http://192.168.1.29/tikiwiki/styles/darkroom.css
+File produced no match. Error: Failed to reach a server: Not Found 
+
+Hit http://192.168.1.29/tikiwiki/setup.sh
+Possible versions based on result: 1.9.3, 1.9.3.1, 1.9.3.2, 1.9.4, 1.9.5, 1.9.6, 1.9.7
+
+Hit http://192.168.1.29/tikiwiki/styles/thenews.css
+File produced no match. Error: Failed to reach a server: Not Found 
+
+Hit http://192.168.1.29/tikiwiki/styles/coelesce.css
+File produced no match. Error: Failed to reach a server: Not Found 
+
+
+Fingerprinting resulted in:
+1.9.5
+
+
+Best Guess: 1.9.5
+
+
