@@ -4,42 +4,66 @@ The original BlindElephant was on:
 https://sourceforge.net/projects/blindelephant/
 http://blindelephant.sourceforge.net/
 
-REQUIREMENT
-
+============================================
+REQUIREMENTS
+============================================
 Python 2.6 minimum
 
+Python libraries:
+- urllib
+- urllib2
+- hashlib
+- BaseHTTPServer
+- cPickle
+- datetime
+- itertools
+- Loggers
+- os
+- httplib
+- distutils.version
+- optparse
+- re
+- sys
+- socket
+- operator
+- tarfile
+- tempfile
+- traceback
 
+
+============================================
 USE
+============================================
 
-$ python BlindElephant.py "http://192.168.1.29/tikiwiki/" tikiwiki
+$ python BlindElephant.py "http://www.example.com/tikiwiki/" tikiwiki
 Loaded /usr/lib/python2.7/dist-packages/blindelephant/dbs/tikiwiki.pkl with 106 versions, 10624 differentiating paths, and 708 version groups.
-Starting BlindElephant fingerprint for version of tikiwiki at http://192.168.1.29/tikiwiki 
+Starting BlindElephant fingerprint for version of tikiwiki at http://www.example.com/tikiwiki 
 
-Hit http://192.168.1.29/tikiwiki/changelog.txt
+Hit http://www.example.com/tikiwiki/changelog.txt
 Possible versions based on result: 1.9.5
 
-Hit http://192.168.1.29/tikiwiki/README
+Hit http://www.example.com/tikiwiki/README
 Possible versions based on result: 1.9.5
 
-Hit http://192.168.1.29/tikiwiki/copyright.txt
+Hit http://www.example.com/tikiwiki/copyright.txt
 Possible versions based on result: 1.9.5, 1.9.6, 1.9.7
 
-Hit http://192.168.1.29/tikiwiki/lib/tiki-js.js
+Hit http://www.example.com/tikiwiki/lib/tiki-js.js
 Possible versions based on result: 1.9.3, 1.9.3.1, 1.9.3.2, 1.9.4, 1.9.5, 1.9.6, 1.9.7
 
-Hit http://192.168.1.29/tikiwiki/INSTALL
+Hit http://www.example.com/tikiwiki/INSTALL
 Possible versions based on result: 1.9.5, 1.9.6, 1.9.7
 
-Hit http://192.168.1.29/tikiwiki/styles/darkroom.css
+Hit http://www.example.com/tikiwiki/styles/darkroom.css
 File produced no match. Error: Failed to reach a server: Not Found 
 
-Hit http://192.168.1.29/tikiwiki/setup.sh
+Hit http://www.example.com/tikiwiki/setup.sh
 Possible versions based on result: 1.9.3, 1.9.3.1, 1.9.3.2, 1.9.4, 1.9.5, 1.9.6, 1.9.7
 
-Hit http://192.168.1.29/tikiwiki/styles/thenews.css
+Hit http://www.example.com/tikiwiki/styles/thenews.css
 File produced no match. Error: Failed to reach a server: Not Found 
 
-Hit http://192.168.1.29/tikiwiki/styles/coelesce.css
+Hit http://www.example.com/tikiwiki/styles/coelesce.css
 File produced no match. Error: Failed to reach a server: Not Found 
 
 
@@ -49,4 +73,8 @@ Fingerprinting resulted in:
 
 Best Guess: 1.9.5
 
+============================================
+TO DO
+============================================
 
+- guess the CMS which is the real interest here
